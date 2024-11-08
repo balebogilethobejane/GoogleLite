@@ -1,72 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google search clone</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Search Clone</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .links {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .links  {
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .image {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .image img {
+      width: 200px;
+      height: auto;
+    }
+
+    .search-container {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 30px;
+      padding: 0 20px;
+    }
+
+    .search-bar {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 25px;
+      border: 2px solid #1a73e8;
+      /* Google blue color */
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .button button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #1a73e8;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .button button:hover {
+      background-color: #1558b0;
+      /* Slightly darker blue on hover */
+    }
+  </style>
 </head>
+
 <body>
-
-
-<style>
- body{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.image{
-    width : 100px;
-    margin-bottom: 20px;
-    text-align: center;
-    margin-top: 100%;
-}
-
-.links{
-    margin-top: 20px;
-    display: inline;
-    font-size: 14px;
-    text-decoration: none;
-}
-
- .search-button input{
-width: 100%;
-
-font-size: 20px;
-border-radius: 25px;
-text-align:center;
- }
- .button{
-width: 100%;
-
-font-size: 20px;
-border-radius: 100px;
-text-align:center;
- }
-
-</style>
-
-<div class="links">
+  <div class="links">
     <a href="image-search.html">Image Search</a>
     <a href="advanced-search.html">Advanced Search</a>
-</div>
-<div class="image">
- <img src ="https://github.com/balebogilethobejane/GoogleLite/blob/main/assets/google-icon.png?raw=true" alt = "Google Logo">
-</div>
+  </div>
 
+  <div class="image">
+    <img src="https://github.com/balebogilethobejane/GoogleLite/blob/main/assets/google-icon.png?raw=true"
+      alt="Google Logo">
+  </div>
 
+  <div class="search-container">
+    <input type="text" id="search-bar" class="search-bar" placeholder="Type to search">
+  </div>
 
-  
-<div  class="search-bar">
-<input type = "text" id = "search-bar" placeholder="Type to search"><br><br>
-</div>
-<div class="button">
-<button type="search-button">Google Search</button>
-<button type="I'm feeling lucky button">I'm feeling lucky</button>
-</div>
-
-
+  <div class="button">
+    <button type="button">Google Search</button>
+    <button type="button">I'm Feeling Lucky</button>
+  </div>
 </body>
+
 </html>
